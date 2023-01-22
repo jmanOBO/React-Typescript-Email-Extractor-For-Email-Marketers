@@ -10,5 +10,15 @@ For the extraction of emails, I made use of regular expressions in combination w
 
 Yes those are the major tools I used for this software. And yes it is easy to extend. One major thing you can do to extend this code is to extract all the top level domains in these emails and displaying them in another text box. Just have fun!
 
+# Features
 
-I hope you study the code and enjoy!
+Ability to extract emails from text in textarea .
+
+Ability to reset the text area
+
+Ability to copy text in the text area.
+
+Ability to see the number of emails in the text inside the textarea even before hitting extract!
+
+
+# I hope you study the code and enjoy!

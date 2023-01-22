@@ -1,9 +1,20 @@
-import { ChangeEvent, useCallback } from "react";
+import { ChangeEvent, useCallback, useRef } from "react";
 import useData from "../hooks/useData"
 
 
 const TextArea = () => {
     const {state:{text,sort, seperator},dispatch}=useData();
+    const txtAreaRef=useRef<HTMLTextAreaElement|null>(null);
+    const handleCopy=()=>{
+      let textValue;
+      if(text){
+        textValue=text;
+        txtAreaRef.current?.select();
+        navigator.clipboard.writeText(textValue);
+        alert("Text copied to clipboard !");
+      }
+
+    }
     const calculateNumberOfEmails=useCallback(()=>{
         let regex;
         if(text){
@@ -33,7 +44,7 @@ const TextArea = () => {
     }
   return (
     <div className="textarea">
-        <textarea style={{width:700,height:400}} value={text} onChange={handleTextChange}>
+        <textarea ref={txtAreaRef} style={{width:700,height:400}} value={text} onChange={handleTextChange}>
 
         </textarea>
 
@@ -62,7 +73,7 @@ const TextArea = () => {
           <button onClick={handleReset}>Reset</button>
         </div>
         <div>
-          <button>copy</button>
+          <button onClick={handleCopy}>copy</button>
         </div>
         <div>
             <label>Email count:</label>
