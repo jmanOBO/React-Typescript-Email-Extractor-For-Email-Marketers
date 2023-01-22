@@ -1,0 +1,32 @@
+*{
+  padding:0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  margin: 0 auto;
+  max-width: 1220px;
+  background-color: aliceblue;
+  
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: inherit;
+  
+}
+.actionArea{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 10px;
+}
+.textarea{
+  padding: 15px;
+  background-color: aqua;
+}
+button{
+  padding: 2px;
+}
