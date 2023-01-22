@@ -20,5 +20,12 @@ Ability to copy text in the text area.
 
 Ability to see the number of emails in the text inside the textarea even before hitting extract!
 
+# How to install
+
+npm install
+
+# How to run
+
+npm run dev
 
 # I hope you study the code and enjoy!
