@@ -11,11 +11,11 @@ body{
 }
 
 main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  place-content: center;
   height: 100vh;
-  width: inherit;
+  width: 80%;
+  margin: 0 auto;
   
 }
 .actionArea{
@@ -24,7 +24,8 @@ main{
   margin-top: 10px;
 }
 .textarea{
-  padding: 15px;
+  
+  padding: 10px;
   background-color: aqua;
 }
 button{

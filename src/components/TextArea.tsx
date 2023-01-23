@@ -44,7 +44,7 @@ const TextArea = () => {
     }
   return (
     <div className="textarea">
-        <textarea ref={txtAreaRef} style={{width:700,height:400}} value={text} onChange={handleTextChange}>
+        <textarea ref={txtAreaRef} style={{minWidth: "100%",height:300,margin: "0 auto"}} value={text} onChange={handleTextChange}>
 
         </textarea>
 

@@ -6,9 +6,9 @@ const App = () => {
   return (
     <DataProvider>
     <main>
-      <div className="container">
+      
         <TextArea/>
-      </div>
+      
     </main>
     </DataProvider>
   )
