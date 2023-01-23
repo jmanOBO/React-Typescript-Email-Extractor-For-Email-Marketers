@@ -1,4 +1,4 @@
-# React Email Marketing Software for Email extraction
+# React Email Marketing Software for Email extraction ( With a live demo ) !
 
 This is an email marketing software extract all emails from any text placed in the input box and it calculates the number of emails found instantly. This is a standard email marketing tool for email marketers and also a great way for a javascript programmer to learn new ways to use regular expressions. 
 
@@ -29,3 +29,8 @@ npm install
 npm run dev
 
 # I hope you study the code and enjoy!
+
+
+# Here is the live demo of this code in action: 
+
+https://courageous-chaja-aff4c4.netlify.app
