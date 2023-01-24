@@ -19,7 +19,7 @@ const TextArea = () => {
         let regex;
         if(text){
             regex=/\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/g;
-            const rmatch=text.match(regex);
+            const rmatch=[...new Set(text.match(regex))];
             return rmatch===null?0:rmatch.length;
         }
         return 0;

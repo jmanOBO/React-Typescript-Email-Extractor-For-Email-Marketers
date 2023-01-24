@@ -36,7 +36,7 @@ const reducer=(state: StateType,action: ActionType)=>{
            const regex=/\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+/g;
            let rmatch;
            if(text){
-            rmatch=text.match(regex);
+            rmatch=[...new Set(text.match(regex))];
              if(rmatch===null){
                 return {
                     ...state,
